@@ -52,7 +52,7 @@ cc ~/learn-c/intro/00/main.c -o main
 #+END_SRC
 
 This will create an executable file from your code named ~main~. To
-run your program, all you need to do is run the following command~
+run your program, all you need to do is run the following command:
 
 #+BEGIN_SRC shell
 ./main
