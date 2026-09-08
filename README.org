@@ -7,6 +7,13 @@ language, starting from the most basic concepts of programming and
 ending with a comprehensive course on the entire POSIX standard
 library.
 
+This is aimed at people who know some programming concepts, such as
+how to use a code editor, but do not know C specifically. This is not
+an introduction to programming course.
+
+This is primarily for MacOS and Linux users. Some of the libraries
+will be different on Windows as it is not POSIX compliant.
+
 ** How do I use this?
 Click on the green button labeled ~Code~ and choose ~Download as ZIP~.
 Extract that ~ZIP~ archive into a directory.

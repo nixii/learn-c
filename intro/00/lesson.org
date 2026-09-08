@@ -1,0 +1,66 @@
+
+* Lesson 00
+/Getting C Working/
+
+** NOTE
+This is the only lesson that will primarily be in an org file. The
+rest will be within a C file.
+
+** Introduction
+It's time to get C set up on your system! First, you must make sure
+you have a C compiler on your system, so let's check that.
+
+First step is to open your terminal. On MacOS, it is probably called
+"Terminal". If you are on Linux, it might be called Terminal, but it
+might have some other name.
+
+In this terminal, you should be able to write ~which cc~. If it says
+~cc not found~, then you need to look up how to install a C compiler
+on your operating system.
+
+** Creating a test program
+Time to make a program to test! Create a folder on your system that is
+easy to access. Inside this folder, create a file called ~main.c~.
+This is the standard name for the start of a C program.
+
+Into this file, paste this following block of code:
+#+BEGIN_SRC c
+  #include <stdio.h>
+
+  int main(int argc, char **argv) {
+    printf("Hello, world!\n");
+    return 0;
+  }
+#+END_SRC
+
+This is your first C program!
+
+** Compiling this program
+It's time to get this code running! For this we need to use ~cc~,
+which is your C compiler (hence the name ~cc~!). To compile your code,
+you need to copy the path to the ~main.c~ file and type the following
+command into your terminal:
+
+#+BEGIN_SRC sh
+cc <path_to_main_c> -o main
+#+END_SRC
+
+So, for example, it might look like this:
+
+#+BEGIN_SRC shell
+cc ~/learn-c/intro/00/main.c -o main
+#+END_SRC
+
+This will create an executable file from your code named ~main~. To
+run your program, all you need to do is run the following command~
+
+#+BEGIN_SRC shell
+./main
+#+END_SRC
+
+And voila, you have created your first C program! You should see
+~Hello, world!~ in your terminal as output.
+
+** Next lesson
+Next lesson, you will learn what each part of that code does.
+
